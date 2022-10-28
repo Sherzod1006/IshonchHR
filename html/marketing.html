@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Resume builder</title>
+  </head>
+  <body>
+    {{#each users}}
+    <div style="display: flex; align-items: center; justify-content: center">
+      <img style="margin-left: 120px" height="200" src="{{this.rasm}}" alt="" />
+      <ol>
+        <li>Ism,familiyasi : {{this.ism}}</li>
+        <li>Manzili: {{this.manzil}}</li>
+        <li>Telefon raqami: {{this.telefon}}</li>
+        <li>Yoshi: {{this.yoshi}}</li>
+        <li>Mutahasisligi: {{this.mutahasislik}}</li>
+        <li>Til bilishi: {{this.tilBilishi}}</li>
+        <li>Ma’lumoti : {{this.malumoti}}</li>
+        <li>Turmush qurganmi : {{this.oilali}}</li>
+        <li>Farzandlari soni : {{this.farzandlari}}</li>
+        <li>Qayerda yashaydi : {{this.yashashJoyi}}</li>
+        <li>Yolg'on gapirib turasizmi ? : {{this.yolgon_rost}}</li>
+        <li>Qanday yaxshi odatlaringiz bor? : {{this.yaxshiOdatlar}}</li>
+        <li>Qanday yomon odatlaringiz bor? : {{this.yomonOdatlar}}</li>
+        <li>
+          Piyodalar o'tish yo'lagida qizil chiroqda o'tasizmi? :
+          {{this.peshahot}}
+        </li>
+        <li>
+          Siz ishga reallik bilan qaraysizmi yoki vijdonan qaraysizmi? :
+          {{this.ishgaqarashi}}
+        </li>
+        <li>
+          Sizda qanday muammolar bor(masalan:qarz yoki boshqalar)? :
+          {{muamolari}}
+        </li>
+        <li>
+          Oilangiz haqida gapirib bering, ota onangiz borligi, oilada nechta
+          farzand ekanligingiz haqida. : {{this.oilasihaqida}}
+        </li>
+        <li>Siz ishga kirishda kim qaror qabul qiladi? : {{this.qaror}}</li>
+        <li>
+          Qaysi korxona, yoki tashkilotlarda va qaysi lavozimlarda ishlagansiz?
+          : {{this.ishTajribasi}}
+        </li>
+        <li>
+          Avvalgi ish joyingizda kollektiv qanday edi? :
+          {{this.avvalgiKallektiv}}
+        </li>
+        <li>Nima uchun ishdan ketdingiz? : {{this.sababIshdanKetish}}</li>
+        <li>
+          Ohirgi oylarda oylik daromadingiz qancha edi? :
+          {{this.ohirgiDaromadlar}}
+        </li>
+        <li>
+          Sizga oylik maosh yaxshimi yoki ish bay maosh yaxshimi? :
+          {{this.ishBay}}
+        </li>
+        <li>Ohirgi 3 yil ichida eng katta erishgan yutug‘ingiz nima? : {{this.ohirgiEngkattayutuq}} </li>
+        <li>Bizni korxonada ishlashdan maqsadingiz nima ? : {{this.ishdanMaqsad}} </li>
+        <li>Xayotda o‘z oldingizga qo‘ygan maqsadingiz nima ? : {{this.hayotMaqsad}} </li>
+        <li>Korxonamizga qanday yordam bera olasiz? : {{this.korhonagaYordam}} </li>
+        <li>
+          Bizning korxonada eng kami qancha oylik maoshga ishlay olasiz? : {{this.oylikHohlash}}
+        </li>
+        <li>Bizning korxonada qancha vaqt ishlay olasiz ? : {{this.qanchaIshlayolish}} </li>
+        <li>Bizning korxonada qachondan ish boshlay olasiz? : {{this.qachonIshBoshlash}} </li>
+        <li>Qanday kompyuter dasturlarini bilasiz? : {{this.dasturlarniBilish}} </li>
+        <li>
+          Siz mijozlar bilan qanchalik darajada muloqot qila olasiz? (Necha
+          foiz%) : {{this.mijozlar}}
+        </li>
+        <li>Marketing nima? : {{this.marketing}} </li>
+        <li>Siz marketing plan bo’yicha ishlay olasizmi? : {{this.marketingPlan}} </li>
+        <li>Ijtimoiy tarmoqlarga “Target” bera olasizmi? : {{this.target}}</li>
+        <li>Siz o’zingizni qanchalik erinchoq deb o’ylaysiz? (necha foiz%): {{this.erinchoq}} </li>
+        <li>
+          O’zingizni qanchalik darjada ma’suliyatli yoki ma’suliyatsiz deb
+          o’ylaysiz? (Necha foiz) : {{this.masuliyat}}
+        </li>
+      </ol>
+    </div>
+    {{/each}}
+  </body>
+</html>
